@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      body {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 100vh;
-      }
+        body
+        {
+            display: flex;
+    justify-content: space-around;
+    align-items: center;
+            height: 100vh;
+        }
       .wrapper {
         display: flex;
         justify-content: space-around;
@@ -27,36 +28,37 @@
 
       #input {
         width: 318px;
-        height: 100px;
+    height: 100px;
       }
 
-      #submit {
+      #submit
+      {
         height: 45px;
-        width: 325px;
-        font-size: large;
-        font-weight: 600;
+    width: 325px;
+    font-size: large;
+    font-weight: 600;
       }
     </style>
 
     <script>
-      function cal() {
-        let a = document.getElementById("input").value;
-        let b = a.length;
+        function cal()
+        {
+            let a = document.getElementById('input').value;
+            let b = a.length;
 
-        document.getElementById("result").innerHTML =
-          b + " Words (including spaces)";
-      }
+            document.getElementById('result').innerHTML = b + ' Words (including spaces)';
+        }
     </script>
   </head>
   <body>
     <div class="wrapper">
       <div class="main_container">
         <div>
-          <h1 style="text-align: center">Word Calculator</h1>
-          <br /><br />
+            <h1 style="text-align: center;">Word Calculator</h1>
+            <br><br>
           <input type="text" name="" id="input" />
           <br />
-          <input type="submit" value="Submit" id="submit" onclick="cal()" />
+          <input type="submit" value="Submit" id="submit" onclick="cal()"/>
           <p class="result" id="result"></p>
         </div>
       </div>
